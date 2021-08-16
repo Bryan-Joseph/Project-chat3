@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="hd" style="margin-top: 50px;">
+            <h1 class="d-inline text-white" id="mainT">Let's chat <sup><img src="./images/mail.png" width="110px"></sup>
+            </h1>
+            <button class="btn btn-danger float-right mt-4" id="logout" onclick="logout()"><i class="fa fa-sign-out"
+                    aria-hidden="true"></i> Logout</button>
+        </div>
+        <div id="outputM" class="radius"></div>
+        <div class="bg-white text-center p-3" id="downD">
+            <label class="d-inline">Message :</label>
+            <input type="text" class="form-control inline mb-2" id="msg" placeholder="Message">
+            <button class="btn btn-success" onclick="send()">Send</button>
+        </div>
+    </div>
+    <script src="messages.js"></script>
+</body>
+
+</html>

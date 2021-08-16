@@ -1,0 +1,53 @@
+#back{
+    background-image:linear-gradient(120deg , rgb(0, 47, 201),rgb(47, 16, 66));
+    height: 100%;
+    position: relative;
+}
+
+html,body,.row{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#cent{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+
+#img{
+    width: 80px;
+    border-radius: 50%;
+}
+#cont{
+    background-color: rgba(0, 0, 255, 0.5);
+    position: relative;
+}
+#log{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#change{
+    animation-name: button;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes button {
+    0%{background-color: blue; color: white}
+    25%{background-color: purple; color: white}
+    50%{background-color:red; color: white}
+    75%{background-color: purple; color: white}
+    100%{background-color:blue; color: white}
+}

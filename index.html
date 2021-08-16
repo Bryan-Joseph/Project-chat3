@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS  if error remove 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script--> 
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-6 col-12" id="back">
+            <div id="cent">
+                <h1 class="text-light">Lets Chat</h1>
+                <img src="./images/chat.jpg" alt="chat icon" id="img">
+            </div>
+            
+        </div>
+        <div class="col-md-6 col-sm-12" id="cont">
+            <div class=" text-center p-4" id="log">
+                <h1>Let's Chat <sup><img src="./images/mail.png" width="110px"></sup></h1>
+                <div class="form-group">
+                    <h4>Login :</h4>
+                    <input type="text" placeholder="Username" class="form-control" id="user_name">
+                    <button onclick="addUser()" class="btn mt-4" id="change">Enter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
