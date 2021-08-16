@@ -25,3 +25,9 @@ function send() {
 
     document.getElementById("msg").value = "";
 }
+function logout() {
+    localStorage.removeItem("user_name");
+    localStorage.removeItem("room-name");
+
+    window.location = "index.html";
+}
